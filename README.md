@@ -7,6 +7,12 @@ Our main objectives are to clean and preprocess textual data, apply LLMs for sen
 
 ---
 
+## Data
+- Financial News Headline from Kaggle: https://www.kaggle.com/datasets/notlucasp/financial-news-headlines
+- yfinance: https://github.com/ranaroussi/yfinance
+  
+---
+
 ## Brief Overview  
 This project explores the intersection of **financial news and market prediction**, aiming to forecast **short-term stock price movements** using **machine learning** and **large language models (LLMs)**.  
 
@@ -23,7 +29,35 @@ Our pipeline integrates **news sentiment analysis** with **historical stock data
 
 ---
 
-## Approach  (yet to complete)
+## Approach  
+1. Problem Definition
+- Goal: Predict the next-day opening price of the S&P 500.
+- Business Question: Can financial news sentiment combined with historical market data improve short-term stock price prediction?
+
+2. Data Collection
+- Retrieved historical S&P 500 price data using yfinance.
+- Collected financial news headlines for corresponding dates.
+
+3. Data Preparation & Integration
+- Aligned historical price data and news headlines by date.
+- Applied FinBERT to extract sentiment probabilities (positive, negative, neutral).
+- Computed daily sentiment scores.
+
+4. Feature Engineering
+- Generated lagged price-based features:
+- Previous day returns
+- Volatility
+- Moving averages (7-day, 30-day)
+- Combined sentiment features + price features into a single dataset.
+
+5. Modeling
+- Trained several models, focusing on XGBoost for predictive performance.
+- Performed model tuning and comparative evaluation.
+
+6. Evaluation
+- Evaluated using accuracy and additional regression error metrics (e.g., MAE, MSE).
+- Analyzed whether sentiment improved predictions compared to using price data alone.
+
 ---
 
 ## Tech Stack  (subject to change)
