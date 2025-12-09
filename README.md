@@ -38,9 +38,6 @@ Our pipeline integrates **news sentiment analysis** with **historical stock data
  **Shambhavi Bhandari**  
  **Karla Nguyen**  
  **Judy Ojewia**  
- **Madeleine Kim**  
- **Vanshika Turkar**  
- **Samriddhi Matharu**  
  **Chris Chen**
 
 **Challenge Advisor:** *Atena Sadeghi*  
