@@ -1,7 +1,7 @@
 # 📊 Stock Price Prediction from Financial News  
 
 ## Project Notes
-This is what Karla tested on their own and shared their findings to the group. 
+This is what Karla tested on their own and shared their findings to the group. They used the same data preperation from the original and tested their modeling. 
 
 ## Project Description  
 Our team uses publicly available financial news headlines and historical stock market data to analyze and predict short-term stock price movements. Leveraging machine learning techniques such as sentiment analysis, feature engineering, and deep learning models—including pre-trained language models (LLMs) like FinBERT—you will build a pipeline that extracts market signals from news content. This will help address the real-world challenge of interpreting financial news for timely investment decisions.  
@@ -32,7 +32,7 @@ Our pipeline integrates **news sentiment analysis** with **historical stock data
 ## Tech Stack  (subject to change)
 - **Languages & Libraries:** Python, Pandas, NumPy, Scikit-learn, PyTorch/TensorFlow  
 - **LLMs:** FinBERT, pre-trained embedding models  
-- **Visualization:** Matplotlib, Seaborn  
+- **Visualization:** Matplotlib, Seaborn, SHAP  
 - **Environment:** VS Code 
 
 ---
