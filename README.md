@@ -57,7 +57,7 @@ Can financial news sentiment combined with historical market data improve the ac
 
 ### Repository Structure
 ```bash
-├── data/ # Kaggle Data
+├── archive/ # Kaggle Data
 │   ├── cnbc_headlines.csv
 │   ├── guardian_headlines.csv
 │   └── reuters_headlines.csv
