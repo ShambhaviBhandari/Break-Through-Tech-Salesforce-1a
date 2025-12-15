@@ -56,17 +56,19 @@ Can financial news sentiment combined with historical market data improve the ac
 ## 👩🏽‍💻 **Setup and Installation**
 
 ### Repository Structure
-├── archive/ # Kaggle dataset
-
-├── Salesforce1A_AI Studio Final Presentation_Fall 2025 AI Studio.pptx/ # Presentation Slides
-
-├── Salesforce1A_Data.ipynb # Data EDA & Analysis
-
-├── Salesforce1A_Model.ipynb # Model
-
+```bash
+├── data/ # Kaggle Data
+│   ├── cnbc_headlines.csv
+│   ├── guardian_headlines.csv
+│   └── reuters_headlines.csv
+├── notebooks/
+│   ├── Salesforce1A_Data.ipynb # Data EDA & Analysis
+│   └── Salesforce1A_Model.ipynb # Model
+├── docs/
+│   ├── Salesforce1A_AI Studio Final Presentation_Fall 2025 AI Studio.pptx # Presentation slides
 ├── requirements.txt
-
 └── README.md
+```
 
 ---
 
@@ -155,6 +157,20 @@ Financial News
 - Predictions rely heavily on recent price history (Close, High, rolling averages)
 - News sentiment features contribute minimally
 - Confirms risk of data leakage when predicting next-day open using same-day close
+
+---
+
+## 🧪 Discussion & Reflection
+
+### What Worked
+- Robust preprocessing and feature engineering
+- Strong baseline models for comparison
+- Clear interpretability using SHAP
+
+### What Didn’t
+- News sentiment alone is not a strong short-term signal
+- Daily averaging of headlines dilutes meaningful events
+- Potential leakage inflates performance metrics
 
 ---
 
